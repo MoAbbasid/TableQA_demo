@@ -130,12 +130,6 @@ iface = gr.Interface(
 iface.launch()
 
 
-# In[21]:
-
-
-get_ipython().system('pip install notebook')
-
-
 # In[34]:
 
 
@@ -149,14 +143,8 @@ subprocess.run(["jupyter", "nbconvert", "--to", "script", "--format", "script", 
 # In[19]:
 
 
-get_ipython().system('gradio deploy')
+# get_ipython().system('gradio deploy')
 
-
-# In[32]:
-
-
-from google.colab import drive
-drive.mount('/content/drive')
 
 
 # That's all! Go ahead and open that share link in a new tab. Check out our [getting started](https://gradio.app/getting_started.html) page for more complicated demos.
