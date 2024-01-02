@@ -10,7 +10,7 @@
 # In[1]:
 
 
-get_ipython().system('pip install -q gradio')
+# get_ipython().system('pip install -q gradio')
 
 
 # Now we'll wrap this function with a Gradio interface.
