@@ -115,7 +115,7 @@ iface = gr.Interface(
         gr.Textbox(type="text", label="Enter text"),
     ],
     outputs=[gr.Textbox(type="text", label="Text Input Output")],
-    title="Multi-input Processor",
+    title="TableQA Test",
     description="Upload an XLSX file and/or enter text, and the processed output will be displayed.",
 )
 
