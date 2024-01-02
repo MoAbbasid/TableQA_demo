@@ -45,21 +45,21 @@ mswtqa = pipeline(task="table-question-answering", model="microsoft/tapex-large-
 # In[6]:
 
 
-table2 = pd.read_excel("/content/Sample.xlsx").astype(str)
-table3 = table2.head(20)
+# table2 = pd.read_excel("/content/Sample.xlsx").astype(str)
+# table3 = table2.head(20)
 
 
 # In[7]:
 
 
-table3
+# table3
 
 
 # In[ ]:
 
 
 #t4 = table3.reset_index()
-table4
+# table4
 
 
 # In[9]:
@@ -75,15 +75,8 @@ query5 = "how many S2 values are there"
 # In[11]:
 
 
-result = tsqa(table=table3, query=query5)["answer"]
-result
-
-
-# In[12]:
-
-
-from collections import Counter
-Counter(result)
+# result = tsqa(table=table3, query=query5)["answer"]
+# result
 
 
 # In[13]:
@@ -95,7 +88,7 @@ Counter(result)
 # In[14]:
 
 
-mswtqa(table=table3, query=query5)["answer"]
+# mswtqa(table=table3, query=query5)["answer"]
 
 
 # In[15]:
