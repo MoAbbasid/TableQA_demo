@@ -115,7 +115,7 @@ iface = gr.Interface(
         gr.Textbox(type="text", label="Enter text"),
     ],
     outputs=[gr.Textbox(type="text", label="Text Input Output")],
-    title="TableQA Test",
+    title="TM TableQA Test",
     description="Upload an XLSX file and/or enter text, and the processed output will be displayed.",
 )
 
@@ -130,7 +130,7 @@ import os
 import subprocess
 
 # Use subprocess to execute the shell command
-subprocess.run(["jupyter", "nbconvert", "--to", "script", "--format", "script", "--output", "/content/", "/content/drive/MyDrive/Colab Notebooks/NEW TableQA-GRADIO: Hello World.ipynb"])
+# subprocess.run(["jupyter", "nbconvert", "--to", "script", "--format", "script", "--output", "/content/", "/content/drive/MyDrive/Colab Notebooks/NEW TableQA-GRADIO: Hello World.ipynb"])
 
 
 # In[19]:
