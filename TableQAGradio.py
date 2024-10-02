@@ -40,9 +40,9 @@ iface = gr.Interface(
     title="Multi-input Processor",
     description="Upload an XLSX file and/or enter text, and the processed output will be displayed.",
     examples=[
-      ["","Literature_review_Test", "How many papers are before the year 2020?"],
-      ["","Literature_review_Test", "How many papers are after the year 2020?"],
-      ["","Literature_review_Test", "what is the paper with NISIT in the title?"],
+      ["","Literature_review_Test.xlsx", "How many papers are before the year 2020?"],
+      ["","Literature_review_Test.xlsx", "How many papers are after the year 2020?"],
+      ["","Literature_review_Test.xlsx", "what is the paper with NISIT in the title?"],
     ],
 )
 
