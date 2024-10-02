@@ -1,4 +1,3 @@
-
 from transformers import pipeline
 import pandas as pd
 import gradio as gr
@@ -32,8 +31,7 @@ def main(model_choice, file_path, text):
 iface = gr.Interface(
     fn=main,
     inputs=[
-        gr.Dropdown(choices=list(models.keys()), label="Select Model"),
-        gr.File(type="filepath", label="Upload XLSX file"),
+        gr.Dropdown(choices=list(models.keys()), label="Select Model", value=list(models.keys())[0])        gr.File(type="filepath", label="Upload XLSX file"),
         gr.Textbox(type="text", label="Enter text"),
     ],
     outputs=[gr.Textbox(type="text", label="Text Input Output")],
