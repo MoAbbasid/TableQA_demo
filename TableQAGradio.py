@@ -13,7 +13,7 @@ models = {
 
 def main(model_choice, file_path, text):
     # Read the Excel file
-    table_df = pd.read_excel(file_path).astype(str)
+    table_df = pd.read_excel(file_path, engine='openpyxl').astype(str)
     
     # Prepare the input for the model
     tqa_pipeline_input = {
