@@ -1,6 +1,6 @@
 ---
-title: TableQA
+title: TableQATest
 app_file: TableQAGradio.py
 sdk: gradio
-sdk_version: 4.12.0
+sdk_version: 4.44.1
 ---
