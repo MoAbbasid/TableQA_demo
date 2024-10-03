@@ -21,7 +21,10 @@ def main(model_choice, file_path, text):
     }
     
     # Get the selected model
-    model = models[model_choice]
+    model = models.get(model_choice)
+    if model is None:
+        return f"Model choice '{model_choice}' not found."
+
     
     # Run the model
     result = model(tqa_pipeline_input)["answer"]
