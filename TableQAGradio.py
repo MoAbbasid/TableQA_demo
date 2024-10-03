@@ -39,8 +39,8 @@ iface = gr.Interface(
         gr.Textbox(type="text", label="Enter text"),
     ],
     outputs=[gr.Textbox(type="text", label="Text Input Output")],
-    title="Multi-input Processor",
-    description="Upload an XLSX file and/or enter text, and the processed output will be displayed.",
+    title="TableQA demo",
+    description="Upload an XLSX file and/or enter text.",
     examples=[
       ["","Literature_review_Test.xlsx", "How many papers are before the year 2020?"],
       ["","Literature_review_Test.xlsx", "How many papers are after the year 2020?"],
